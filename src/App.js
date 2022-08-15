@@ -1,25 +1,21 @@
 import { Button } from "./components/Button";
-import { Footer } from "./components/Footer";
-import ImportantContent from "./components/ImportantContent";
-import {
-  StyledButton,
-  StyledHeadline,
-  StyledParagraph,
-} from "./components/StyledComponents";
-import "./App.css";
+import { About } from "./components/About";
+import { Projects } from "./components/Projects";
+import Home from "./components/Home";
+
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello there</h1>
-      </header>
-      <StyledHeadline>This is a headline</StyledHeadline>
-      <StyledParagraph>My paragraph</StyledParagraph>
-      <StyledButton>Click me</StyledButton>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+
       <Button />
-      <ImportantContent />
-      <Footer />
     </div>
   );
 }
