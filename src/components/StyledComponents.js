@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const StyledParagraph = styled.p`
-  color: orange;
+  color: green;
 `;
 
 export const StyledHeadline = styled.h1`
-  color: salmon;
+  color: red;
 `;
 
 export const StyledButton = styled.button`
-  border: 3px solid salmon;
+  border: 3px solid red;
 `;
