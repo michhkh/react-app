@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background-color: lightblue;
+}
+
+.btn {
+  padding: 0.5em 1em;
 }
 
 .App-logo {
@@ -19,8 +24,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -35,4 +40,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:link {
+  padding: 0.5em;
 }

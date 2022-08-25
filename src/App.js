@@ -1,11 +1,8 @@
-import {
-  StyledButton,
-  StyledHeadline,
-  StyledParagraph,
-} from "./components/StyledComponents";
 import { About } from "./components/About";
-import { Projects } from "./components/Projects";
+import { APIproject } from "./components/APIproject";
+import { Counter } from "./components/Counter";
 import Home from "./components/Home";
+import "./App.css";
 
 import React from "react";
 import { Routes, Route } from "react-router-dom";
@@ -13,15 +10,14 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
-      </Routes>
-
-      <StyledHeadline>Hello there</StyledHeadline>
-      <StyledParagraph>Press the button for a test</StyledParagraph>
-      <StyledButton>Click me if you can</StyledButton>
+      <header className="App-header">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="counter" element={<Counter />} />
+          <Route path="APIproject" element={<APIproject />} />
+        </Routes>
+      </header>
     </div>
   );
 }
