@@ -10,7 +10,6 @@ export const APIproject = () => {
       .get("https://catfact.ninja/facts")
       .then((response) => {
         setData(response.data.data);
-        console.log(response.data);
       })
       .catch((error) => {
         setApiError(error);
