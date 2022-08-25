@@ -1,6 +1,5 @@
 import logo from "../logo.svg";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 export const Counter = () => {
   const [counter, setCounter] = useState(0);
@@ -18,12 +17,7 @@ export const Counter = () => {
   return (
     <div>
       <h1>Counter</h1>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/APIproject">APIproject</Link>
-      </nav>
-      <div className="App">
+      <div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <button
