@@ -6,6 +6,7 @@ export const StyledParagraph = styled.p`
 
 export const StyledHeadline = styled.h1`
   color: red;
+  margin-top: 1.2em;
 `;
 
 export const StyledButton = styled.button`
