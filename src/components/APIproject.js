@@ -26,7 +26,14 @@ export const APIproject = () => {
         <h1>Facts about cats</h1>
         <div>
           {data.map((item, index) => {
-            return <p key={index}>{item.fact}</p>;
+            return (
+              <div>
+                <p key={index}>{item.fact}</p>
+                <p key={item.length}>
+                  - Total symbols in sentence: {item.length}
+                </p>
+              </div>
+            );
           })}
         </div>
       </div>
