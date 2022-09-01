@@ -1,12 +1,12 @@
-import { About } from "./mainPage/About";
-import { APIproject } from "./mainPage/APIproject";
-import { Counter } from "./mainPage/Counter";
-import { StylesTest } from "./mainPage/StylesTest";
-import Home from "./mainPage/Home";
+import { About } from "./mainPage/AboutPage";
+import { APIproject } from "./mainPage/APIprojectPage";
+import { Counter } from "./mainPage/CounterPage";
+import { StylesTest } from "./mainPage/StylesTestPage";
+import Home from "./mainPage/HomePage";
 import "../App.css";
 import logo from "../logo.svg";
-import { UseContextCounter } from "./mainPage/UseContextCounter";
-import { ContextCount } from "./mainPage/ContextCount";
+import { UseContextCounter } from "./mainPage/UseContextCounterPage";
+import { ContextCount } from "./mainPage/ContextCountPage";
 import { Routes, Route } from "react-router-dom";
 
 export const MainPage = () => {
