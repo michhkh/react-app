@@ -1,27 +1,19 @@
-import { About } from "./components/About";
-import { APIproject } from "./components/APIproject";
-import { Counter } from "./components/Counter";
-import { StylesTest } from "./components/StylesTest";
-import Home from "./components/Home";
 import "./App.css";
-import logo from "./logo.svg";
-
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { MainPage } from "./app/MainPage";
+import { ContextCounter } from "./components/ContextCounter";
 
 function App() {
+  // Dette er staten vi velger å bruke som en global value
+  // Dette gjør vi ved å passere det i value til ContextCounter.Provider
+  // Det blir deretter tilgjengelig i hele appen
+  const [contextCount, setContextCount] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home />
-        <img src={logo} className="mini-logo App-logo" alt="logo" />
-        <Routes>
-          <Route path="about" element={<About />} />
-          <Route path="counter" element={<Counter />} />
-          <Route path="APIproject" element={<APIproject />} />
-          <Route path="StylesTest" element={<StylesTest />} />
-        </Routes>
-      </header>
+    <div>
+      <ContextCounter.Provider value={{ contextCount, setContextCount }}>
+        <MainPage />
+      </ContextCounter.Provider>
     </div>
   );
 }

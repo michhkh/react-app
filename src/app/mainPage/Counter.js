@@ -1,4 +1,4 @@
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
 import { useState, useEffect } from "react";
 
 export const Counter = () => {

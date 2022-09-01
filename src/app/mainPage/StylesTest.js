@@ -2,7 +2,7 @@ import {
   StyledButton,
   StyledHeadline,
   StyledParagraph,
-} from "./StyledComponents";
+} from "../../components/StyledComponents";
 
 export const StylesTest = () => {
   return (
