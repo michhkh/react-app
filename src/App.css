@@ -53,5 +53,13 @@ h1 {
 }
 
 :link {
-  padding: 0.5em;
+  margin: 0.5em;
+}
+
+a:link {
+  color: #61dafb;
+}
+
+a:visited {
+  color: green;
 }
